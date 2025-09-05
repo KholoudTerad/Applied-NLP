@@ -1,0 +1,51 @@
+# Sentiment Analysis on Restaurant Reviews using BERT  
+
+## 📌 Project Overview  
+This project demonstrates the use of **BERT (Bidirectional Encoder Representations from Transformers)** for sentiment analysis on restaurant reviews. The goal is to classify reviews into **positive, neutral, or negative sentiments** and provide actionable insights for restaurants to improve customer satisfaction and service quality.  
+
+Unlike conventional methods, BERT’s transformer-based architecture captures **context and semantics** of text, making it highly effective in understanding customer opinions.
+
+---
+
+## 📊 Dataset  
+- **Source:** [Kaggle - Restaurant Reviews](https://www.kaggle.com/datasets/joebeachcapital/restaurant-reviews)  
+- **Size:** 10,000 reviews, 8 columns  
+- **Used Columns:**  
+  - `Review`: Text content of customer feedback  
+  - `Rating`: Numerical score (1–5)  
+- **Split Strategy:**  
+  - 80% → Training  
+  - 20% → Validation  
+
+---
+
+## 🤖 Model  
+- **Base Model:** `BERT-Base, Uncased` (pre-trained on large corpora)  
+- **Why BERT?**  
+  - Bidirectional context understanding  
+  - Strong performance on NLP tasks  
+  - Handles subtle nuances in text  
+- **Fine-Tuning:**  
+  - Added classification head on top of BERT  
+  - Trained to classify reviews into 3 categories: Negative, Neutral, Positive  
+
+---
+
+## 📈 Results  
+Evaluation metrics on validation set:  
+- **Accuracy:** 84.8%  
+- **Precision:** 84.8%  
+- **Recall:** 84.8%  
+- **F1-Score:** 84.8%  
+
+These results confirm that BERT effectively captures sentiment patterns and provides reliable predictions.  
+
+---
+
+## 📌 Key Takeaways
+
+BERT significantly improves sentiment analysis performance compared to traditional methods.
+
+Provides restaurants with actionable insights from customer feedback.
+
+Achieved ~85% accuracy across all metrics.
